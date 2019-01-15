@@ -4,7 +4,7 @@ Current Godot version: Godot 3.1 beta 1
 
 The purpose of this addon is to create a node which automatically navigates to a given position within a Navigation2D node.
 
-See: 
+See: https://youtu.be/RnQSdOYMS2g for a demo
 
 To use it, do the following:
 1) Clone this repository into your project under an addons folder in your resources
