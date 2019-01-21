@@ -17,8 +17,8 @@ var current_destination
 var next_destination
 var is_navigating
 
-func navigate_to(destination_vec2d):
-    current_destination = destination_vec2d
+func navigate_to(destination):
+    current_destination = destination
     path = navigation.get_simple_path(actor.global_position, current_destination.global_position, OptimizePath)
     is_navigating = true
 
@@ -38,8 +38,8 @@ func move(delta):
 
 func update_path():
     if path.size() == 1:
-        emit_signal("on_destination_reached", self, current_destination)
         is_navigating = false
+        emit_signal("on_destination_reached", self, current_destination)
     else:
         path.remove(0)
 
